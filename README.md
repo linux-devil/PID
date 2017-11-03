@@ -1,10 +1,10 @@
-##PID project term2 SDC-ND
+## PID project term2 SDC-ND
 
-#COMPILATION
+# COMPILATION
 
 Project successfully compiles
 
-#Dependencies
+# Dependencies
 
 cmake >= 3.5
 make >= 4.1
@@ -13,13 +13,13 @@ uWebSockets
 Udacity Simulator
 
 
-#Steps
+# Steps
 
 cmake ..
 make
 ./pid
 
-#IMPLEMENTATION
+# IMPLEMENTATION
 
 PID has following components:
 
@@ -32,17 +32,17 @@ Integral signifies total error, i.e integral sum of all CTEs . Too many positive
 # D (Derivative)
 Signifies rate of change of CTE from one value to next. 
 
-Reflection
+# Reflection
 
-#1.Proporțional
+# 1.Proporțional
 Setting higher value of P makes car oscillate , this is because car overcorrects / overshoots to the middle. 
 Setting P too low will make car take longer to react and thus car goes off the centre.
 
-#2. Integral
+# 2. Integral
 Lower value of the coefficient will lead car to drift on either side for longer periods
 Higher value will lead to quick oscillations and the car overshoots.
 
-#3. Derivative
+# 3. Derivative
 Higher value leads to too much oscillation
 Lower value it fails to recover from the effect of P.
 
