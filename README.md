@@ -22,7 +22,7 @@ IMPLEMENTATION
 
 PID has following components:
 
-P (Proportional)
+     1.P (Proportional)
 CTE(Cross Track Error) is calculated which tells the deviation of car from middle line of the road. This parameter helps car to steer in proportion to CTE. For e.g.: if the car is on the left of the line one would like to steer to right. Higher  the deviation from the track, higher is the steering.
 
      2.   I (Integral)
@@ -33,7 +33,7 @@ Signifies rate of change of CTE from one value to next.
 
 Reflection
 
-Proporțional
+1.Proporțional
 Setting higher value of P makes car oscillate , this is because car overcorrects / overshoots to the middle. 
 Setting P too low will make car take longer to react and thus car goes off the centre.
 
